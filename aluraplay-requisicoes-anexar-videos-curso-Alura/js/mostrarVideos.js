@@ -1,3 +1,4 @@
+//oq vai mostrar no video quando ele aparecer :
 import { conectaApi } from "./conectaApi.js";
 
 const lista = document.querySelector("[data-lista]");
@@ -14,10 +15,13 @@ export default function constroiCard(titulo, descricao, url, imagem) {
     <h3>${titulo}</h3>
     <p>${descricao}</p>
 </div>`
-
+    //se eu converto o video, preciso q ele retorne outro video :
     return video;
 }
 
+//Colocar msg de erro:
+//Se => TRY
+//SE NÃO = CATCH
 async function listaVideos() {
     try {
         const listaApi = await conectaApi.listaVideos();

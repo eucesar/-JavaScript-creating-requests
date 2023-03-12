@@ -1,3 +1,4 @@
+//criar video de acordo com oq eu colcoquei no INPUT - criaçãod e formulario = usar ele em buscarVideos
 import { conectaApi } from "./conectaApi.js";
 const formulario = document.querySelector("[data-formulario]");
 
